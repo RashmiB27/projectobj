@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+
+
+</head>
+<body>
+<script>
+
+let users = [{
+		name: "jack",
+		username : "jackb",
+		email_id : "jack123@gmail.com",
+		phone_no : 9306734256,
+		address : "xyz",
+		bankname: "HDFC",
+		bankaccno : 4567890542,
+		IFSC_code:"5657A",
+		order_details:[{
+			order_id:101,
+			item_purchased:"laptop",
+			price:90000,
+			EMI: "6 months"
+		},{
+			order_id:101,
+			item_purchased:"laptop",
+			price:90000,
+			EMI: "6 months"
+		}]
+		
+		
+},		
+{
+	name: "lily",
+	username : "lilyc",
+	email_id : "lily123@gmail.com",
+	phone_no : 8766574816,
+	address : "mno",
+	bankname: "HDFC",
+	bankaccno : 5677890542,
+	IFSC_code:"5337A"},
+	{
+		name: "john",
+		username : "johnc",
+		email_id : "john123@gmail.com",
+		phone_no : 87667342516,
+		address : "mno",
+		bankname: "HDFC",
+		bankaccno : 1237890542,
+		IFSC_code:"5437E"}];
+		
+		
+document.writeln('<table border = 1 cellspacing = 10 cellpadding = 10 style = "border-collapse:collapse">');
+
+document.writeln('<tr>');
+document.writeln('<th>name</th>');
+document.writeln('<th>Username</th>');
+document.writeln('<th>email_id</th>');
+document.writeln('<th>phone_no</th>');
+document.writeln('<th>address</th>');
+document.writeln('<th>bankname</th>');
+document.writeln('<th>bankaccountno</th>');
+document.writeln('<th>IFSC_code</th>');
+document.writeln('<th>order_details</th>')
+document.writeln('</tr>');
+
+for (let i=0;i<3;i++)
+{
+
+
+document.writeln('<tr>');
+document.writeln('<td>'+users[i].name + '</td>');
+document.writeln('<td>'+users[i].username + '</td>');
+document.writeln('<td>'+users[i].email_id + '</td>');
+document.writeln('<td>'+users[i].phone_no + '</td>');
+document.writeln('<td>'+users[i].address + '</td>');
+document.writeln('<td>'+users[i].bankname + '</td>');
+document.writeln('<td>'+users[i].bankaccno + '</td>');
+document.writeln('<td>'+users[i].IFSC_code + '</td>');
+
+document.writeln('<td>')
+document.writeln('<table border=1 style="border-collapse:collapse">');
+document.writeln('<tr>');
+document.writeln('<th>order_id</th>');
+document.writeln('<th>item_purchased</th>');
+document.writeln('<th>price</th>');
+document.writeln('<th>EMI</th>');
+document.writeln('</tr>')
+
+for (let j=0;j<2;j++)
+	{
+	document.writeln('<tr>');
+	document.writeln('<td>'+users[i].order_details[j].order_id+'</td>');
+	document.writeln('<td>'+users[i].order_details[j].item_purchased+'</td>');
+	document.writeln('<td>'+users[i].order_details[j].price+'</td>');
+	document.writeln('<td>'+users[i].order_details[j].EMI+'</td>');
+	document.writeln('</tr>')
+	}
+	
+document.writeln('</table>');
+document.writeln('</td>');
+document.writeln('</tr>');
+
+
+
+
+
+
+}
+
+document.writeln('</table>')
+	
+</script>
+
+</body>
+</html>
