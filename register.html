@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+
+ body{
+height:100%;
+background-image:linear-gradient(to bottom right, violet, white);
+
+
+
+} 
+
+h1   {text-align:center;
+margin-top:0px;}
+
+button {
+width:250px;height:30px;
+background-color : purple ;
+border:none;
+border-radius:5px;
+font-size:14px;
+background-image:linear-gradient(to bottom right, violet, pink);
+
+}
+
+.wrapper{
+height:100vh;
+width:100vw;
+display:flex;
+justify-content:center;
+}
+
+.container{
+background-color:white;
+height:100%;
+margin:auto;
+box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+box-sizing: border-box;
+border-radius: 15px;
+padding:25px;
+    
+}
+
+.container:hover{
+ box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.pwd{
+float: right;}
+
+
+
+.form input{
+background-color:#f2f2f2;
+width: 50%;
+border: 0;
+margin: 0 0 15px;
+padding: 10px;
+box-sizing: border-box;
+}
+
+.radiobutton
+{
+width:10% !important
+}
+
+.regs
+{
+text-align:center 
+}
+
+
+</style>
+</head>
+
+<body >
+<div class="wrapper">
+  <div class="container">
+      <h1 align ="center">
+     New User
+  </h1>
+<form class="form">
+Name  :   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input list="browsers" name="browser" placeholder="Name"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+
+
+
+  UserName : &nbsp;&nbsp;&nbsp;&nbsp;<input type="text"   placeholder="Enter Username" ></input>
+  <br>
+  Email : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" placeholder="Enter Email"></input>
+<br> 
+
+ Card Type : &nbsp;&nbsp;&nbsp;<input  class = "radiobutton" type="radio" value="gold" name = "card">Gold<input class = "radiobutton" value="titanium" type="radio" name="card">Titanium<br>
+  Age : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" placeholder="Enter Age"></input><br>
+Salary : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" placeholder="Enter Salary"></input><br>
+  Location :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" placeholder="Enter Location"></input><br>
+  Password :  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="password"   placeholder="Enter Password" ></input><br>
+ PhoneNo :  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text"   placeholder="Enter PhoneNo" ></input>
+  
+
+ 
+  
+
+  <br><br>
+<div class="regs">
+  <button class="regs">Register</button></div>
+
+
+</form>
+  </div>
+    </div>
+</body>
